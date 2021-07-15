@@ -3,6 +3,13 @@ Theme Name: Template Theme
 Author: William Souza
 */
 
+body {
+    width: 100%;
+    height: 1200px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
 
 #nav_menu {
     margin-top: 40px;
@@ -30,5 +37,17 @@ Author: William Souza
     text-decoration: none;
     text-transform: uppercase;
     color: #0c0c0c;
+}
+
+#carouselExampleIndicators {
+    margin-top: 20px;
+    left: 500px;
+    width: 100%;
+    height: 80%;
+    max-width: 950px;
+    border-radius: 10px;
+    max-height: 350px;
+    background-color: #000;
+    align-self: center;
 }
 
