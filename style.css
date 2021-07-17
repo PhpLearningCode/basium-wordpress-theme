@@ -40,8 +40,9 @@ body {
     color: #0c0c0c;
 }
 
-
 #carouselExampleIndicators {
-    height: 500px;
+    margin-top: 20px;
+    width: 80%;
+    align-self: center;
 }
 

@@ -14,7 +14,7 @@
       <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/car2.png" class="d-block w-100" alt="promo2">
     </div>
     <div class="carousel-item">
-      <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/car3.png" alt="promo3">
+      <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/car3.png" class="d-block w-100" alt="promo3">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
