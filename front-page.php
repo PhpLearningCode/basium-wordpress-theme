@@ -8,13 +8,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/car1.png" class="d-block w-100" alt="promo1">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/car2.png" class="d-block w-100" alt="promo2">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/car3.png" alt="promo3">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

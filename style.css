@@ -16,6 +16,7 @@ body {
     margin-top: 40px;
     border: 1px solid #000;
     justify-content: center;
+    background-color: white;
     
 }
 
@@ -41,14 +42,6 @@ body {
 
 
 #carouselExampleIndicators {
-    margin-top: 20px;
-    width: 100%;
-    min-width: 113px;
-    height: 80%;
-    max-width: 950px;
-    border-radius: 10px;
-    max-height: 350px;
-    background-color: #000;
-    align-self: center;
+    height: 500px;
 }
 
