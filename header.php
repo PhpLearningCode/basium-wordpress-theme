@@ -7,21 +7,19 @@
 
 <body <?php body_class()?> >
 
-<header class="sticky-top">
-    <div id="nav_menu">
-        
-        <?php wp_nav_menu(
-            array(
-                'theme_location' => 'top-menu',
-                'menu_class' => 'navigation',
-            )
-        );?>
+<header class="sticky-top nav_menu">
+    <img 
+        src="<?php header_image(); ?>" 
+        alt="headerImage"
+        width="200"
+        height="100"
+    />
 
-        <img 
-            src="<?php header_image(); ?>" 
-            alt="headerImage"
-            width="200"
-            height="100"
-        />
-    </div>
+    <?php wp_nav_menu(
+        array(
+            'theme_location' => 'top-menu',
+            'menu_class' => 'navigation',
+        )
+    );?>
+
 </header>
