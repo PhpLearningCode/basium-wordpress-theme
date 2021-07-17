@@ -3,11 +3,14 @@ Theme Name: Template Theme
 Author: William Souza
 */
 
+@import url('//fonts.googleapis.com/css?family=Bitter:300,400,700|Nunito:300,400,700&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     height: 1200px;
+    font-family: Bitter;
 }
 
 .nav_menu {
@@ -44,5 +47,27 @@ body {
     margin-top: 20px;
     width: 80%;
     align-self: center;
+}
+
+.top-categories {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #0d0d0d;
+    align-self: center;
+    align-content: center;
+}
+
+.cat-btn {
+    margin-left: 10px;
+    padding: 2px;
+    background-image: linear-gradient(#666, #333);
+}
+
+.cat-btn a {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
 }
 

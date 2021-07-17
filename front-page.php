@@ -27,4 +27,14 @@
   </button>
 </div>
 
+<div class="top-categories">
+  <p>Categorias Principais</p>
+  <?php 
+    $categories = get_categories( array('taxonomy' => 'product_cat', 'title_li'  => '') ); 
+    foreach($categories as $cat) {
+      echo '<button class="cat-btn"><a href="' . get_term_link($cat->slug, 'product_cat') .'">' . $cat->name . '</button>';
+    }
+  ?> 
+</div>
+
 <?php get_footer();?>
