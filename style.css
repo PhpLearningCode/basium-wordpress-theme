@@ -73,3 +73,11 @@ body {
     color: white;
 }
 
+.products {
+    margin-top: 50px;
+    display: inline-grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: repeat(4, 1fr);
+}
+

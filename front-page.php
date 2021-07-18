@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -35,6 +35,24 @@
       echo '<button class="cat-btn"><a href="' . get_term_link($cat->slug, 'product_cat') .'">' . $cat->name . '</button>';
     }
   ?> 
+</div>
+
+<div class="products"> 
+  <?php  
+      $args = array(
+          'post_type'      => 'product',
+          'posts_per_page' => 10,
+      );
+
+      $loop = new WP_Query( $args );
+
+      while ( $loop->have_posts() ) : $loop->the_post();
+          global $product;
+          echo '<a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().'</br> '.get_the_title().'</a>';
+      endwhile;
+
+      wp_reset_query();
+  ?>
 </div>
 
 <?php get_footer();?>
