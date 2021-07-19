@@ -54,7 +54,8 @@
 
       while ( $loop->have_posts() ) : $loop->the_post();
           global $product;
-          echo '<a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().'</br> '.get_the_title().'</a>';
+          echo '<a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().'</br> '.get_the_title();
+          echo '<p>R$' . wc_get_product()->get_price() . '</p></a>';
       endwhile;
 
       wp_reset_query();
