@@ -37,6 +37,12 @@
   ?> 
 </div>
 
+<a href="#">
+  <div class="separator">
+    <div class="left-line"></div>DESTAQUES<div class="right-line"></div>
+  </div>
+</a>
+
 <div class="products"> 
   <?php  
       $args = array(
